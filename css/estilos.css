@@ -1,0 +1,11 @@
+.container {
+  padding: 20px;
+  background: #ddd;
+  font-family:sans-serif;
+  color:#666;
+}
+
+.img3 {
+  max-width: 100%;
+  height: auto;
+}
