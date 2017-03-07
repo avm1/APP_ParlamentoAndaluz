@@ -13,6 +13,20 @@
 </head>
 
 <body>	
+	<center><img src="logo.png" alt="Parlamento de Andalucía"  width="300" height="70"></center>
+    
+    <center><h2>TV EN DIRECTO</h2></center><p></p>
+    <p align="center"><id="fecha"></p>
+    <hr style="color: green;" />        
+	
+	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento1/_definst_/parlamento1.stream', '_system', 'location=yes');"><h1>CANAL 1</h1></a></center>
+	<p></p>
+	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento2/_definst_/parlamento2.stream', '_system', 'location=yes');"><h1>CANAL 2</h1></a></center>
+	<p></p>
+	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento3/_definst_/parlamento3.stream', '_system', 'location=yes');"><h1>CANAL 3</h1></a></center>
+	<p></p>
+	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento4/_definst_/parlamento4.stream', '_system', 'location=yes');"><h1>CANAL 4</h1></a></center>
+
 <!-- ------------------------------------------------------------------------------- -->
 <script>      
 	var fecha = new Date();
@@ -34,22 +48,6 @@
     var ano = fecha.getFullYear();  
                 
     document.getElementById("fecha").innerHTML = dia + " de " + mes + " de " + ano;      
-</script>
-
-	<center><img src="logo.png" alt="Parlamento de Andalucía"  width="300" height="70"></center>
-    
-    <center><h2>TV EN DIRECTO</h2></center><p></p>
-    <p align="center"><id="fecha"></p>
-    <hr style="color: green;" />        
-	
-	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento1/_definst_/parlamento1.stream', '_system', 'location=yes');"><h1>CANAL 1</h1></a></center>
-	<p></p>
-	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento2/_definst_/parlamento2.stream', '_system', 'location=yes');"><h1>CANAL 2</h1></a></center>
-	<p></p>
-	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento3/_definst_/parlamento3.stream', '_system', 'location=yes');"><h1>CANAL 3</h1></a></center>
-	<p></p>
-	<center><a href="#" onclick="window.open('rtsp://193.147.254.64:1935/parlamento4/_definst_/parlamento4.stream', '_system', 'location=yes');"><h1>CANAL 4</h1></a></center>
-
-	  
+</script>	  
 </body>
 </html>
