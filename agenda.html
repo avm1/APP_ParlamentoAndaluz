@@ -18,13 +18,13 @@
     function showFeed(data){
         if(data.status == 'ok'){
 
-            var output = '<h1>AGENDA SEMANAL</h1>';
+            var output = '<center><h1>AGENDA SEMANAL</h1></center>';
 
             for(var i=0;i<data.items.length;++i){           
 
                 output += '<p><h2><a href="#" onclick="window.open(\'' + 
                 data.items[i].link + '\',\'_system\',\'location=yes\');" style="text-decoration: none">' +
-                '<p><font color="red">' + data.items[i].title + '</font></p>' +                
+                '<p><font color="blue">' + data.items[i].title + '</font></p>' +                
                 '</a></h2></p>';   
             }
 
