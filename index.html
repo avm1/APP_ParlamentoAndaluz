@@ -1,9 +1,7 @@
 <!doctype html>
-<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
 	<meta name="MobileOptimized" content="320"/>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -12,85 +10,84 @@
 
 	<title>Parlamento de Andalucía</title>
 
-	<!--Include JQM and JQ-->
-	<link rel="stylesheet" href="css/themes/jqmfb.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.structure.min.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script src="js/jquery.animate-enhanced.min.js"></script>
-
-	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 	
-	<!--JQM globals you can edit or remove file entirely... note it needs to be loaded before jquerymobile js -->
-	<script src="js/jqm.globals.js"></script>
+	<link rel="stylesheet" href="css/estilos.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>		
+		
 	
-	<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
-
-	<!--JQM SlideMenu-->
-	<link rel="stylesheet" href="css/jqm.slidemenu.css" />
-	<script src="js/jqm.slidemenu.js"></script>
+	<style type="text/css">a {text-decoration: none; color: blue;} </style>
 </head>
 <body>
 
-	<div id="slidemenu">
-
-		<div id="profile"><a href="http://www.parlamentodeandalucia.es"><img src="img/anagrama.png" width="400" height="54" alt="Parlamento de Andalucía"/></a></div>
-			
-		
-		<h3>ACTUALIDAD</h3>
-		<ul>
-			<li><a href="agenda.html"><img src="img/smico3.png">Agenda Semanal</a></li>			
-			<li><a href="noticias.html"><img src="img/smico3.png">Noticias</a></li>	
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/diputadosysenadores.do', '_system', 'location=yes');"><img src="img/smico3.png">Diputados y Senadores</a></li>
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/organosparlamentarios/comisiones.do', '_system', 'location=yes');"><img src="img/smico3.png">Comisiones</a></li>			
-								
-
-		</ul>
-
-		<h3>PUBLICACIONES</h3>
-		<ul>			
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/bopa.do', '_system', 'location=yes');"><img src="img/smico3.png">BOPA</a></li>
-						
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/diariosdesesiones.do', '_system', 'location=yes');"><img src="img/smico3.png">Diario de Sesiones</a></li>						
-		</ul>
-
-		<h3>RETRANSMISIONES</h3>
-		<ul>
-			<li><a href="tv_android.html"><img src="img/smico3.png">TV en directo</a></li>
-			<li><a href="#" onclick="window.open('audio.html', '_blank', 'location=yes');"><img src="img/smico3.png">Sólo Audio en directo</a></li>
-			<li><a href="ultimos_plenos.html"><img src="img/smico3.png">Vídeo últimos Plenos</a></li>
-
-		</ul>
-
-	</div>
-
-	<div data-role="page" id="main_page" data-theme="a">
-
-		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
-			<a href="#" data-slidemenu="#slidemenu" data-slideopen="false" data-icon="smico" data-corners="false" data-iconpos="notext"></a>		
-			<h1>  </h1>
-		</div>
-
-		<div data-role="content">
+ 
+<div data-role="page">
+	<div data-role="content">
 			<div class="container"><p></p><img class="img3" src="img/anagrama-PA.png"</div>
 			<h1><div style="text-align: center">PARLAMENTO DE ANDALUCÍA</div></h1>
-		</div>
+	</div>
+
+    <p></p>
+    <div data-role="header">
+        <h4>ACTUALIDAD</h4>
+    </div>
+    <div data-role="content">
+        <ul>
+			<li><a href="agenda.html">Agenda Semanal</a></li>	
+			<p></p>		
+			<li><a href="noticias.html">Noticias</a></li>
+			<p></p>	
+			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/diputadosysenadores.do', '_system', 'location=yes');">Diputados y Senadores</a></li>			
+			<p></p>	
+			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/organosparlamentarios/comisiones.do', '_system', 'location=yes');">Comisiones</a></li>			
+		</ul>
+    </div>
+
+    <div data-role="header">
+        <h4>PUBLICACIONES</h4>
+    </div>
+   	<div data-role="content">
+ 		<ul>			
+			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/bopa.do', '_system', 'location=yes');">BOPA</a></li>
+			<p></p>			
+			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/diariosdesesiones.do', '_system', 'location=yes');">Diario de Sesiones</a></li>						
+		</ul>
+	</div>
+
+	<div data-role="header">	
+		<hgroup>
+			<h4>RETRANSMISIONES</h4>
+    	</hgroup>        
+    </div>
+    <div data-role="content">    
+		<ul>	
+			<li><a href="tv_android.html">TV en directo</a></li>			
+			<p></p>								
+			<li><a href="#" onclick="window.open('audio.html', '_blank', 'location=yes');">Sólo Audio en directo</a></li>
+			<p></p>			
+			<li><a href="ultimos_plenos.html">Vídeo últimos Plenos</a></li>	
+		</ul>
 
 	</div>
-	
-	<div data-role="page" id="another_page" data-theme="a">
 
-		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-update-page-padding="false">
-			<a href="#" data-slidemenu="#slidemenu" data-slideopen="false" data-icon="smico" data-corners="false" data-iconpos="notext">Menu</a>
+	<div data-role="header">	
+		<hgroup>
+			<h4>UTILIDADES</h4>
+    	</hgroup>        
+    </div>
+    <div data-role="content">    
+		<ul>	
+			<li><a href="tel:+954592100">Tlf. Parlamento Andalucía</a></li>			
+			<p></p>								
 			
-		</div>
+		</ul>
 
-		<div data-role="content">
-		
-			
-		</div>
+	</div>
 
-	</div>	
-	
-	
+    
+</div><!-- /page -->
+
 </body>
 </html>
