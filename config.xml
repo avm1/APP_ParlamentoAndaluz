@@ -48,7 +48,8 @@
     <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
   </feature>
 
-
+  <access origin="tel:*" launch-external="yes" />
+  <access origin="mailto:*" launch-external="yes" />
     
   <icon src="icon.png"/>  
   
