@@ -23,6 +23,7 @@
 		.ui-header .ui-title {
  			overflow: visible !important;
   			white-space: normal !important;
+  			font-size: 20px;
 			}
 
 		.ui-footer .ui-title {
@@ -40,66 +41,73 @@
 			<div class="container"><p></p><img class="img3" src="img/anagrama-PA.png"</div>
 			<h1><div style="text-align: center">PARLAMENTO DE ANDALUCÍA</div></h1>
 	</div>
-
     <p></p>
+
     <div data-role="header">
         <h4>ACTUALIDAD</h4>
+        <p></p>
     </div>
-    <div data-role="content">
-        <ul>
-			<li><a href="agenda.html">Agenda Semanal</a></li>	
-			<p></p>		
-			<li><a href="noticias.html">Noticias</a></li>
-			<p></p>	
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/diputadosysenadores.do', '_system', 'location=yes');">Diputados y Senadores</a></li>			
-			<p></p>	
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/organosparlamentarios/comisiones.do', '_system', 'location=yes');">Comisiones</a></li>			
-		</ul>
-    </div>
+
+    <ul data-role="listview">        
+		<a href="agenda.html" data-role="button">Agenda Semanal</a>
+		<p></p>		
+		<a href="noticias.html" data-role="button">Noticias</a>
+		<p></p>	
+		<a href="#" data-role="button"  onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/diputadosysenadores.do', '_system', 'location=yes');">Diputados y Senadores</a>
+		<p></p>	
+		<a href="#" data-role="button" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/composicionyfuncionamiento/organosparlamentarios/comisiones.do', '_system', 'location=yes');">Comisiones</a>
+		<p></p>			
+	</ul><p></p>
+
 
     
     <div data-role="header">
         <h4>RECURSOS DE INFORMACIÓN</h4>
     </div>
+   	<ul data-role="listview">   				
+		<a href="#" data-role="button" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/bopa.do', '_system', 'location=yes');">BOPA</a>
+		<p></p>			
+		<a href="#" data-role="button" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/diariosdesesiones.do', '_system', 'location=yes');">Diario de Sesiones</a>
+		<p></p>			
+		<a href="#" data-role="button" onclick="window.open('http://biblioteca.parlamentodeandalucia.es/cgi-bin/mopac/', '_system', 'location=yes');">Biblioteca</a>
+		<p></p>
+	</ul><p></p>
 
-   	<div data-role="content">
- 		<ul>			
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/bopa.do', '_system', 'location=yes');">BOPA</a></li>
-			<p></p>			
-			<li><a href="#" onclick="window.open('http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/recursosdeinformacion/diariosdesesiones.do', '_system', 'location=yes');">Diario de Sesiones</a></li>						
-			<p></p>			
-			<li><a href="#" onclick="window.open('http://biblioteca.parlamentodeandalucia.es/cgi-bin/mopac/', '_system', 'location=yes');">Biblioteca</a></li>		
-		</ul>
-	</div>
+
 
 	<div data-role="header">			
 		<h4>RETRANSMISIONES</h4>    			
     </div>
+    <ul data-role="listview">    			
+		<a href="tv_android.html" data-role="button">TV en directo</a>
+		<p></p>								
+		<a href="#" data-role="button" onclick="window.open('audio.html', '_blank', 'location=yes');">Sólo Audio en directo</a>
+		<p></p>			
+		<a href="ultimos_plenos.html" data-role="button">Vídeo últimos Plenos</a>
+		<p></p>			
+	</ul><p></p>	
 
-    <div data-role="content">    
-		<ul>	
-			<li><a href="tv_android.html">TV en directo</a></li>			
-			<p></p>								
-			<li><a href="#" onclick="window.open('audio.html', '_blank', 'location=yes');">Sólo Audio en directo</a></li>
-			<p></p>			
-			<li><a href="ultimos_plenos.html">Vídeo últimos Plenos</a></li>	
-		</ul>
-	</div>
+
 
 	<div data-role="header">			
 		<h4>UTILIDADES</h4>    	
     </div>
+    <ul data-role="listview">    		
+		<a href="#" data-role="button" onclick="window.open('tel:+954592100', '_system', 'location=yes');">Tlf. Parlamento Andalucía</a>
+		<p></p>
+		<a href="#" data-role="button" onclick="window.open('mailto:parlamento@parlamentodeandalucia.es', '_system', 'location=yes');">Email  Parlamento Andalucía</a>
+		<p></p>
+	</ul><p></p>
 
-    <div data-role="content">    
-		<ul>	
-			<li><a href="#" onclick="window.open('tel:+954592100', '_system', 'location=yes');">Tlf. Parlamento Andalucía</a></li>
-			<p></p>
-			<li><a href="#" onclick="window.open('mailto:parlamento@parlamentodeandalucia.es', '_system', 'location=yes');">Email  Parlamento Andalucía</a></li>						
-		</ul>
+
+	<div data-role="footer" data-theme="w">
+		<h4>&nbsp;</h4>
 	</div>
 
 	<div data-role="footer" data-theme="b"> 
+		<p></p>
 		<h4><a href="https://www.facebook.com/parlamentodeandalucia.es"><img src="img/facebook.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/parlamentoand"><img src="img/twitter.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.youtube.com/parlamentoandalucia"><img src="img/youtube.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.flickr.com/photos/parlamentodeandalucia"><img src="img/flickr.gif"></a>
+		<p><h5>Parlamento de Andalucía</h5></p>
 		</h4> 
 	</div>
 
